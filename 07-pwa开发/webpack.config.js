@@ -37,4 +37,7 @@ module.exports = {
       skipWaiting: true,
     }),
   ],
+  devServer: {
+    port: 8081,
+  },
 }
