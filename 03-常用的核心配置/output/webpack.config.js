@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, './src/index.js'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
     // 指定打包的产物信息
     // library: {
@@ -19,6 +19,7 @@ module.exports = {
     // 上面的写法也可以改写成下面的写法
     library: '_',
     libraryTarget: 'umd',
+    chunkFilename: '[id].js',
   },
   plugins: [
     new HtmlWebpackPlugin({
