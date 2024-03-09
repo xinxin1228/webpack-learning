@@ -10,5 +10,5 @@ module.exports = merge(commConfig, {
     port: 8080,
     hot: true,
   },
-  devtool: 'source-map',
+  devtool: 'eval-cheap-module-source-map',
 })
